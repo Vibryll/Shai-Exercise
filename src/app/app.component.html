@@ -1,0 +1,40 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a routerLink="/homePage" class="navbar-brand" style="color: greenyellow">
+      <i class="fa fa-500px fa-2x"></i>
+      Vibryll
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <!--FIFTH STEP: ADD ROUTERLINK ATTRIBUTES-->
+          <a routerLink="/firstView" class="nav-link">
+            <i class="fa fa-anchor"></i>
+            My Shit 
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <!--ALSO HERE-->
+          <a routerLink="/secondView" class="nav-link">
+            <i class="fa fa-camera"></i>    
+            Pictures
+          </a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">
+          Search
+        </button>
+      </form>
+    </div>
+  </nav>
+</div>
+
+<router-outlet></router-outlet>
